@@ -1,21 +1,25 @@
 class Solution {
 public:
     vector<string> fizzBuzz(int n) {
-        vector<string> s = {};
+        vector<string> answer = {};
+
+        if(n < 1 || n > pow(10, 4))
+            return answer;
+
         for(int i = 1; i <= n; i+=1){
             if(i % 3 == 0 && i % 5 == 0){
-                s.push_back("FizzBuzz");
+                answer.push_back("FizzBuzz");
             }
             else if(i % 3 == 0){
-                s.push_back("Fizz");
+                answer.push_back("Fizz");
             }
             else if(i % 5 == 0){
-                s.push_back("Buzz");
+                answer.push_back("Buzz");
             }
             else{
-                s.push_back(to_string(i));
+                answer.push_back(to_string(i));
             }
         }
-        return s;
+        return answer;
     }
 };
