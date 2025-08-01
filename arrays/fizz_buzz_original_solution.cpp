@@ -1,4 +1,4 @@
-Class solution{
+class Solution{
   public:
     vector<string> fizzBuzz(const int &n){
     vector<string> v = {};
@@ -30,6 +30,10 @@ Class solution{
           v.push_back(x);
       }    
     }
+    //cout << endl;
+    return v;
+    }
+};
     //cout << endl;
     return v;
     }
