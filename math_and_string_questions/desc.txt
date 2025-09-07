@@ -1,0 +1,1 @@
+Just 5 easy difficulty questions which are under both the topics Math and String on the Leetcode website.
